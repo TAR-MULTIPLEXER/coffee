@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+      
+    <section class="hero">
+        <h1>Welcome to Coffee Shop</h1>
+        <p>Welcome to our Coffee Shop website, where we invite you to embark on a delightful journey of flavors and
+            aromas. Step into our world of rich, robust, and invigorating coffee that will awaken your senses and leave
+            you craving for more.</p><br>
+        <a href="#" class="btn">Order Now</a>
+    </section>
+
+    <section class="featured-items">
+        <h2>Featured Items</h2>
+        <div class="item">
+            <img src="picture/coffebean.jpg" alt="Coffee 1">
+            <h3>Coffee Bean </h3>
+            <p>Carbohydrates-proteins-lipids-caffeine-trigonelline</p>
+        </div>
+        <div class="item">
+            <img src="picture/expresso.jpg" alt="Coffee 2">
+            <h3>Espresso</h3>
+            <p>coffee beans-portafilter-tamper-water-ginder</p>
+        </div>
+
+        <div class="item">
+            <img src="picture/cup.jpg" alt="Coffee 3">
+            <h3>Cappuccino</h3>
+            <p>espresso -milk-foam-optional flavors-garnish</p>
+        </div>
+        <div class="break">
+
+        </div>
+       <div class="featured-items2">
+        <div class="item">
+            <img src="picture/coffebean.jpg" alt="Coffee 1">
+            <h3>Coffee Bean </h3>
+            <p>Carbohydrates-proteins-lipids-caffeine-trigonelline</p>
+        </div>
+        <div class="item">
+            <img src="picture/expresso.jpg" alt="Coffee 2">
+            <h3>Espresso</h3>
+            <p>coffee beans-portafilter-tamper-water-ginder</p>
+        </div>
+
+        <div class="item">
+            <img src="picture/cup.jpg" alt="Coffee 3">
+            <h3>Cappuccino</h3>
+            <p>espresso -milk-foam-optional flavors-garnish</p>
+        </div>
+       </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Coffee Shop. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    window.addEventListener("scroll", function() {
+  var element = document.querySelector(".featured-items");
+
+  var position = element.getBoundingClientRect().top;
+
+  var windowHeight = window.innerHeight;
+  if (position < windowHeight) {
+    element.classList.add("scroll");
+  }
+  var element = document.querySelector("footer");
+
+var position = element.getBoundingClientRect().top;
+
+var windowHeight = window.innerHeight;
+if (position < windowHeight) {
+  element.classList.add("scroll");
+}
+
+});
+
+</script>
+</html>
