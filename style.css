@@ -1,15 +1,11 @@
-/* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
   }
-  
-  /* Global styles */
   body {
     font-family: Arial, sans-serif;
     background-color: #F3ECE5;
     color: #333;
-    
   }
   
   header {
@@ -31,20 +27,20 @@ body, h1, h2, h3, p, ul, li {
     color: #FFFFFF;
   }
   
-  .hero {
+  .intro {
     text-align: center;
     padding: 100px 0;
     background-color: #E5DCC2;
   }
   
-  .hero h1 {
+  .intro h1 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #3D9970;
     animation-name:title;
     animation-duration: 1.5s;
   }
-  .hero p{
+  .intro p{
     width:60%;
     position: relative;
     left: 20%;
@@ -53,7 +49,7 @@ body, h1, h2, h3, p, ul, li {
    
 }
   
-  .btn {
+  .menubtn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #3D9970;
@@ -79,7 +75,7 @@ body, h1, h2, h3, p, ul, li {
     color: #3D9970;
   }
   
-  .item {
+  .drink {
     display: inline-block;
     margin: 0 20px;
     /* animation-name: items;
@@ -87,7 +83,7 @@ body, h1, h2, h3, p, ul, li {
     
   }
   
-  .item img {
+  .drink img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -118,23 +114,7 @@ footer.scroll{
   transform: translateX(0);
 opacity: 1;
 }
-/* .scroll {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.animate {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.animate.show {
-  opacity: 1;
-} */
-
-/* ANIMATION SECTION : */
+/* simple animation part */
 @keyframes title{
   0% { opacity: 0; transform: translateY(-100%); }
   100% { opacity: 1; transform: translateY(0); }
@@ -148,9 +128,9 @@ opacity: 1;
   0% { opacity: 0; transform: translateX(-100%); }
   100% { opacity: 1; transform: translateX(0); }
 }
-
-/* END ANIMATION SECTION  */
-
-/* RESPONSIVE SECTION  GOES HERE  */
-
-/* END RESPONSIVE SECTION  */
+@media (max-width: 768px) {
+  .intro p { width: 90%; left: 5%; }
+  .drink { display: block; margin: 20px auto; }
+  nav ul li { display: block; margin: 5px 0; }
+  .intro { padding: 60px 10px; }
+}
